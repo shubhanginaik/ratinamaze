@@ -35,8 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "resolutions": {
-    "@oclif/plugin-help": "3.2.14"
   }
 }

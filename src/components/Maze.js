@@ -52,7 +52,7 @@ class Maze extends React.Component {
       y >= 0 &&
       y < 4 &&
       this.matrix[x * 4 + y] > 0 &&
-      visited[x * 4 + y] == 0
+      visited[x * 4 + y] === 0
     );
   };
 
