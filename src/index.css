@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.totalPath b{
+  font-size: 18px;
+}
+.header ul{
+  list-style: none;
+  float: right;
+}
+.header li{
+  display:inline-block ;
+  margin: 20px;
+}
+.footer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
