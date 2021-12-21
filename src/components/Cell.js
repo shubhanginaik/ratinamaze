@@ -18,10 +18,11 @@ const useStyle1 = makeStyles(style1);
 const useStyle2 = makeStyles(style2);
 
 function Cell(props){
-    if(props.N == 0){
+    const N=Number(props.N)
+    if(N === 0){
         return <RedCell > </RedCell>
     }
-    else if(props.N == 1){
+    else if(N === 1){
         return <GreenCell ></GreenCell>
     } else {
         return <WhiteCell></WhiteCell>

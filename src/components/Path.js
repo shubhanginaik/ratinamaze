@@ -16,7 +16,7 @@ class Path extends React.Component{
         }
     
         for (let j = 0; j < 16; j++) {
-          if (this.props.maze[j] == 0) {
+          if (this.props.maze[j] === 0) {
             this.foundPath[j] = 2;
           }
         }
