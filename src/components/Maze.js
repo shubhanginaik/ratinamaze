@@ -22,7 +22,7 @@ class Maze extends React.Component {
   findColor = (path) => {
     this.pathIdx += 1;
     let result = path[this.pathIdx];
-    if (this.pathIdx === 14) {
+    if (this.pathIdx == 14) {
       this.pathIdx = 0;
     }
     console.log(result)
@@ -35,7 +35,7 @@ class Maze extends React.Component {
   generateMatrix = () => {
     for (let i = 0; i < 14; i++) {
       let val = Math.floor(Math.random() * 4); // generate random number in 0, 1, 2, 3
-      if (val === 0) {
+      if (val == 0) {
         this.matrix.push(0); // create blocks i.e red cells
       } else {
         this.matrix.push(2); // white cells
@@ -52,7 +52,7 @@ class Maze extends React.Component {
       y >= 0 &&
       y < 4 &&
       this.matrix[x * 4 + y] > 0 &&
-      visited[x * 4 + y] === 0
+      visited[x * 4 + y] == 0
     );
   };
 
@@ -68,7 +68,7 @@ class Maze extends React.Component {
   };
 
   mazeUtil = (visited, x, y, currentPath) => {
-    if (x === 3 && y === 3) {
+    if (x == 3 && y == 3) {
       this.numPaths += 1;
       this.paths.push([...currentPath]);
       visited[15] = 0;
